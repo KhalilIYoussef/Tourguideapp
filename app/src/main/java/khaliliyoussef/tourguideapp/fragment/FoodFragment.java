@@ -35,28 +35,28 @@ public class FoodFragment extends Fragment {
                 getString(R.string.not_applicable),
                 getString(R.string.golosi_phone),
                 getString(R.string.golosi_description),
-                R.drawable.golosi_cafe));
+                R.mipmap.golosi_cafe));
 
         locations.add(new Location(getString(R.string.peoples_park_name),
                 getString(R.string.peoples_park_address),
                 getString(R.string.not_applicable),
                 getString(R.string.peoples_park_phone),
                 getString(R.string.peoples_park_description),
-                R.drawable.peoples_park));
+                R.mipmap.peoples_park));
 
         locations.add(new Location(getString(R.string.jimmys_name),
                 getString(R.string.jimmys_address),
                 getString(R.string.not_applicable),
                 getString(R.string.jimmys_phone),
                 getString(R.string.jimmys_description),
-                R.drawable.jimmys_grotto));
+                R.mipmap.jimmys_grotto));
 
         locations.add(new Location(getString(R.string.michaels_name),
                 getString(R.string.michaels_address),
                 getString(R.string.not_applicable),
                 getString(R.string.michaels_phone),
                 getString(R.string.michaels_description),
-                R.drawable.michaels_italian));
+                R.mipmap.michaels_italian));
         // Find display view for list
         RecyclerView listView = (RecyclerView) rootView.findViewById(R.id.locations_list);
 

@@ -33,28 +33,28 @@ public class FitnessFragment extends Fragment {
                 getString(R.string.not_applicable),
                 getString(R.string.crossfit_phone),
                 getString(R.string.crossfit_description),
-                R.drawable.crossfit));
+                R.mipmap.crossfit));
 
         locations.add(new Location(getString(R.string.yogasylum_name),
                 getString(R.string.yogasylum_address),
                 getString(R.string.not_applicable),
                 getString(R.string.yogasylum_phone),
                 getString(R.string.yogasylum_description),
-                R.drawable.yogasylum));
+                R.mipmap.yogasylum));
 
         locations.add(new Location(getString(R.string.salto_name),
                 getString(R.string.salto_address),
                 getString(R.string.not_applicable),
                 getString(R.string.sakura_phone),
                 getString(R.string.salto_description),
-                R.drawable.salto));
+                R.mipmap.salto));
 
         locations.add(new Location(getString(R.string.glacier_drumlin_name),
                 getString(R.string.glacier_drumlin_address),
                 getString(R.string.not_applicable),
                 getString(R.string.glacier_drumlin_phone),
                 getString(R.string.glacier_drumlin_description),
-                R.drawable.glacier_drumlin));
+                R.mipmap.glacier_drumlin));
 
         // Find display view for list
         RecyclerView listView = (RecyclerView) rootView.findViewById(R.id.locations_list);

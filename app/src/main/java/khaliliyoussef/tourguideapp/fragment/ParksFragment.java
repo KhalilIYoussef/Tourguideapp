@@ -36,28 +36,28 @@ public class ParksFragment extends Fragment {
                 getString(R.string.retzer_hours),
                 getString(R.string.retzer_phone),
                 getString(R.string.retzer_description),
-                R.drawable.retzer_nature_center));
+                R.mipmap.retzer_nature_center));
 
         locations.add(new Location(getString(R.string.fox_brook_name),
                 getString(R.string.fox_brook_address),
                 getString(R.string.fox_brook_hours),
                 getString(R.string.fox_brook_phone),
                 getString(R.string.fox_brook_description),
-                R.drawable.fox_brook_park));
+                R.mipmap.fox_brook_park));
 
         locations.add(new Location(getString(R.string.minooka_name),
                 getString(R.string.minooka_address),
                 getString(R.string.minooka_hours),
                 getString(R.string.minooka_phone),
                 getString(R.string.minooka_description),
-                R.drawable.minooka_park));
+                R.mipmap.minooka_park));
 
         locations.add(new Location(getString(R.string.fox_river_name),
                 getString(R.string.fox_river_address),
                 getString(R.string.fox_river_hours),
                 getString(R.string.fox_river_phone),
                 getString(R.string.fox_river_description),
-                R.drawable.fox_river_park));
+                R.mipmap.fox_river_park));
 
         // Find display view for list
         RecyclerView listView = (RecyclerView) rootView.findViewById(R.id.locations_list);

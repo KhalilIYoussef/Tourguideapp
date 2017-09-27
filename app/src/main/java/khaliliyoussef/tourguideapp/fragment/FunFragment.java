@@ -26,35 +26,35 @@ public class FunFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
-        final ArrayList<Location> locations = new ArrayList<Location>();
+        final ArrayList<Location> locations = new ArrayList<>();
 
         locations.add(new Location(getString(R.string.adventure_rock_name),
                 getString(R.string.adventure_rock_address),
                 getString(R.string.not_applicable),
                 getString(R.string.adventure_rock_phone),
                 getString(R.string.adventure_rock_description),
-                R.drawable.adventure_rock));
+                R.mipmap.adventure_rock));
 
         locations.add(new Location(getString(R.string.icombat_name),
                 getString(R.string.icombat_address),
                 getString(R.string.not_applicable),
                 getString(R.string.icombat_phone),
                 getString(R.string.icombat_description),
-                R.drawable.icombat));
+                R.mipmap.icombat));
 
         locations.add(new Location(getString(R.string.skyzone_name),
                 getString(R.string.skyzone_address),
                 getString(R.string.not_applicable),
                 getString(R.string.skyzone_phone),
                 getString(R.string.skyzone_description),
-                R.drawable.skyzone));
+                R.mipmap.skyzone));
 
         locations.add(new Location(getString(R.string.veloce_name),
                 getString(R.string.veloce_address),
                 getString(R.string.not_applicable),
                 getString(R.string.veloce_phone),
                 getString(R.string.veloce_description),
-                R.drawable.veloce_speedway));
+                R.mipmap.veloce_speedway));
 
 
 

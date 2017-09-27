@@ -44,7 +44,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/clock" />
+                    android:src="@mipmap/clock" />
 
                 <!-- Hours info -->
                 <TextView
@@ -68,7 +68,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center|top"
-                    android:src="@drawable/phone_icon" />
+                    android:src="@mipmap/phone_icon" />
 
                 <TextView
                     android:id="@+id/phone_text"
@@ -92,7 +92,7 @@
                     android:layout_width="@dimen/icon_width"
                     android:layout_height="@dimen/icon_width"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/location_icon" />
+                    android:src="@mipmap/location_icon" />
 
                 <!-- Location text -->
                 <TextView
