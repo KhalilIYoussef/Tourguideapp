@@ -1,12 +1,17 @@
-package khaliliyoussef.tourguideapp.fragment;
+package khaliliyoussef.tourguideapp.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public class CategoryViewPager extends FragmentPagerAdapter {
+import khaliliyoussef.tourguideapp.fragment.FitnessFragment;
+import khaliliyoussef.tourguideapp.fragment.FoodFragment;
+import khaliliyoussef.tourguideapp.fragment.FunFragment;
+import khaliliyoussef.tourguideapp.fragment.ParkFragment;
 
-    public CategoryViewPager(FragmentManager fm) {
+public class SectionPagerAdapter extends FragmentPagerAdapter {
+
+    public SectionPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
@@ -14,7 +19,7 @@ public class CategoryViewPager extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new ParksFragment();
+                return new ParkFragment();
             case 1:
                 return new FoodFragment();
             case 2:

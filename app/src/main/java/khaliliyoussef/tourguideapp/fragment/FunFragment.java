@@ -13,7 +13,9 @@ import khaliliyoussef.tourguideapp.R;
 import khaliliyoussef.tourguideapp.adapter.LocationAdapter;
 import khaliliyoussef.tourguideapp.model.Location;
 
-
+/**
+ * Created by Khalil on 9/26/2017.
+ */
 public class FunFragment extends Fragment {
 
     public FunFragment() {

@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import khaliliyoussef.tourguideapp.R;
-import khaliliyoussef.tourguideapp.fragment.CategoryViewPager;
+import khaliliyoussef.tourguideapp.adapter.SectionPagerAdapter;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        getSupportActionBar().setElevation(0);
+        getSupportActionBar().setElevation(0);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.category_view_pager);
 
-        CategoryViewPager categoryViewPager = new CategoryViewPager(getSupportFragmentManager());
+        SectionPagerAdapter sectionPagerAdapter = new SectionPagerAdapter(getSupportFragmentManager());
 
-        viewPager.setAdapter(categoryViewPager);
+        viewPager.setAdapter(sectionPagerAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
 

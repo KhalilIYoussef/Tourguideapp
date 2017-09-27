@@ -13,10 +13,12 @@ import khaliliyoussef.tourguideapp.R;
 import khaliliyoussef.tourguideapp.adapter.LocationAdapter;
 import khaliliyoussef.tourguideapp.model.Location;
 
+/**
+ * Created by Khalil on 9/26/2017.
+ */
+public class ParkFragment extends Fragment {
 
-public class ParksFragment extends Fragment {
-
-    public ParksFragment() {
+    public ParkFragment() {
         // Required empty public constructor
     }
 
@@ -28,7 +30,6 @@ public class ParksFragment extends Fragment {
 
         // Add all of the Park locations
         final ArrayList<Location> locations = new ArrayList<Location>();
-
 
 
         locations.add(new Location(getString(R.string.retzer_name),

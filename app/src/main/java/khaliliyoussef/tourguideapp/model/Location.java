@@ -8,17 +8,6 @@ public class Location {
     private String mDescription;
     private int mImageId ;
 
-
-
-
-    public Location(String name, String address, String hours, String phoneNumber, String description) {
-        mName = name;
-        mAddress = address;
-        mHours = hours;
-        mPhoneNumber = phoneNumber;
-        mDescription = description;
-    }
-
     public Location(String name, String address, String hours, String phoneNumber, String description, int imageId) {
         mName = name;
         mAddress = address;
@@ -44,9 +33,6 @@ public class Location {
     public String getDescription() {
         return mDescription;
     }
-//    public boolean hasImage() {
-//        return mImageId ;
-//    }
     public int getImageResourceId() {
         return mImageId;
     }
