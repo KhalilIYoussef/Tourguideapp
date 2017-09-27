@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Tour guide app</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="not_applicable">n/a</string>
+
+    <!-- Park resources -->
+
+    <string name="retzer_name">Retzer Nature Center</string>
+    <string name="retzer_hours">Sunrise-10pm</string>
+    <string name="retzer_phone">262-896-8007</string>
+    <string name="retzer_address">S14 W28167 Madison St\nWaukesha, WI</string>
+    <string name="retzer_description">
+        Nature preservation with free access to the public.
+        Includes hiking trails, as well as a nature center
+        and paid planetarium visits.
+    </string>
+
+    <string name="fox_brook_name">Fox Brook Park</string>
+    <string name="fox_brook_hours">11am-7pm</string>
+    <string name="fox_brook_phone">262-783-3425</string>
+    <string name="fox_brook_address">2925 Barker Rd\nBrookfield, WI</string>
+    <string name="fox_brook_description">
+        Park with a man-made beach and swimming quarry.
+        Includes a raft with a diving board, a snack shop
+        and on-duty lifeguards.
+    </string>
+
+    <string name="minooka_name">Minooka Park</string>
+    <string name="minooka_hours">Sunrise-10pm</string>
+    <string name="minooka_phone">262-896-8006</string>
+    <string name="minooka_address">1927 E Sunset Dr\nWaukesha, WI</string>
+    <string name="minooka_description">
+        A large park and forest with trails for runners and hikers alike.
+        Also includes a beach and lake with smimming at your own risk.
+    </string>
+
+    <string name="fox_river_name">Fox River Park</string>
+    <string name="fox_river_hours">Sunrise-10pm</string>
+    <string name="fox_river_phone">262–970–6690</string>
+    <string name="fox_river_address">W264 S4500 River Rd\nWaukesha, WI</string>
+    <string name="fox_river_description">
+        This park follows the iconic Fox River and includes many
+        hiking trails through forests and marshes.
+    </string>
+
+    <!-- End Park Strings -->
+
+    <!-- Food Strings -->
+
+    <string name="golosi_name">Golosi Gelato Café</string>
+    <string name="golosi_phone">262-391-0637</string>
+    <string name="golosi_address">162 E Wisconsin Ave\nOconomowoc, WI</string>
+    <string name="golosi_description">
+        Traditional Panini sandwiches and a huge selection of freshly made gelato.
+    </string>
+
+    <string name="peoples_park_name">Taylor\'s Peoples Park</string>
+    <string name="peoples_park_phone">262-522-6868</string>
+    <string name="peoples_park_address">337 W Main St\nWaukesha, WI</string>
+    <string name="peoples_park_description">
+        A popular bar and restaurant serving a great selection of food and alcohol choices.
+        Located in the heart of Waukesha in a civil war era building. Includes a rooftop
+        patio for a nice change in atmosphere.
+    </string>
+
+    <string name="jimmys_name">Jimmy\'s Grotto</string>
+    <string name="jimmys_phone">262-542-1500</string>
+    <string name="jimmys_address">314 E Main St\nWaukesha, WI</string>
+    <string name="jimmys_description">
+        This pizza place is a local favorite. Home of the locally famous Ponza - a large calzone
+        deep fried with all your favorite toppings inside.
+    </string>
+
+    <string name="michaels_name">Michael\'s Italian Restaurant</string>
+    <string name="michaels_phone">262-549-0406</string>
+    <string name="michaels_address">1400 S Grand Ave\nWaukesha, WI</string>
+    <string name="michaels_description">
+        A traditional Italian restaurant that has been in the area for many years.
+        Great for families.
+    </string>
+
+    <string name="sakura_phone">262-408-5681</string>
+
+
+    <!-- Fun Resources -->
+    <string name="adventure_rock_name">Adventure Rock</string>
+    <string name="adventure_rock_phone">262-790-6800</string>
+    <string name="adventure_rock_address">21250 W Capitol Dr\nBrookfield, WI</string>
+    <string name="adventure_rock_description">
+        An indoor climbing gym with hundreds of routes, a workout area,
+        lockers, and a party room.
+    </string>
+
+    <string name="icombat_name">iCombat</string>
+    <string name="icombat_phone">855-454-4426</string>
+    <string name="icombat_address">1023 Spring City Dr\nWaukesha, WI</string>
+    <string name="icombat_description">
+        Tactical lasertag with realistic weapons. Also offers tactical training courses.
+    </string>
+
+    <string name="skyzone_name">Skyzone Trampoline Park</string>
+    <string name="skyzone_phone">262-696-1600</string>
+    <string name="skyzone_address">W229 N1420 Westwood Dr\nWaukesha, WI</string>
+    <string name="skyzone_description">
+        Indoor trampoline play area. Take fitness classes, play dodgeball or volleyball,
+        and take a leap into the foam pit.
+    </string>
+
+    <string name="veloce_name">Veloce Indoor Speedway</string>
+    <string name="veloce_phone">262-232-6700</string>
+    <string name="veloce_address">W229 N1400 Westwood Dr\nWaukesha, WI</string>
+    <string name="veloce_description">
+        High-speed indoor go-karting. Also offers tournament racing for advanced racers.
+    </string>
+
+    <!-- Fitness resources -->
+
+    <string name="crossfit_name">CrossFit Waukesha</string>
+    <string name="crossfit_phone">414-704-5569</string>
+    <string name="crossfit_address">411 Travis Ln\nWaukesha, WI</string>
+    <string name="crossfit_description">
+        Gym offering crossfit and yoga classes.
+    </string>
+
+    <string name="yogasylum_name">Yogasylum</string>
+    <string name="yogasylum_phone">262-781-8102</string>
+    <string name="yogasylum_address">3815 N Brookfield Rd\nBrookfield, WI</string>
+    <string name="yogasylum_description">
+        Yoga center offering a variety of classes daily. Located next to Café Manna.
+    </string>
+
+    <string name="salto_name">Salto Gymnastic</string>
+    <string name="salto_address">1417 Poplar Dr\nWaukesha, WI</string>
+    <string name="salto_description">
+        Gymnastic instructional and training facility.
+    </string>
+
+    <string name="glacier_drumlin_name">Glacier Drumlin Bike Trail</string>
+    <string name="glacier_drumlin_phone">262-646-3025</string>
+    <string name="glacier_drumlin_address">W329 N346 County hwy C\nDelafield, WI</string>
+    <string name="glacier_drumlin_description">
+        A bike trail stretching 52 miles between Waukesha and Sun Prairie.
+        $5 per day or $25 per year.
+    </string>
+
+</resources>
