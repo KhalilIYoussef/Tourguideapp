@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -63,7 +64,7 @@ public class FunFragment extends Fragment {
 
 
         // Find display view for list
-        RecyclerView listView = (RecyclerView) rootView.findViewById(R.id.locations_list);
+        ListView listView = (ListView) rootView.findViewById(R.id.locations_list);
 
         // Create custom adapter instance and connect to the list view
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locations);

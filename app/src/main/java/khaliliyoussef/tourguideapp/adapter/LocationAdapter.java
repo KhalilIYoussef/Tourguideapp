@@ -1,14 +1,18 @@
 package khaliliyoussef.tourguideapp.adapter;
 
-import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Objects;
 
 import khaliliyoussef.tourguideapp.R;
 import khaliliyoussef.tourguideapp.model.Location;
@@ -16,58 +20,70 @@ import khaliliyoussef.tourguideapp.model.Location;
 /**
  * Created by Khalil on 9/26/2017.
  */
-public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.LocationViewHolder> {
 
-    private static List<Location> locations;
+public class LocationAdapter extends ArrayAdapter<Location> {
 
-    private static Context context;
+    public LocationAdapter(Activity activity, ArrayList<Location> locations) {
+        super(activity, 0, locations);
+    }
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        View locationItemView = convertView;
 
-    public static class LocationViewHolder extends RecyclerView.ViewHolder {
-      TextView mName;
-      TextView mAddress;
-      TextView mHours;
-      TextView mPhoneNumber;
-      TextView mDescription;
-      ImageView mImageId ;
-
-        public LocationViewHolder(View v) {
-            super(v);
-            mName = (TextView) v.findViewById(R.id.location_text);
-            mAddress = (TextView) v.findViewById(R.id.location_name);
-           mHours = (TextView) v.findViewById(R.id.hours_text);
-            mPhoneNumber = (TextView) v.findViewById(R.id.phone_text);
-            mImageId = (ImageView) v.findViewById(R.id.photo);
-            mDescription = (TextView) v.findViewById(R.id.description_text);
-
+        if (locationItemView == null) {
+            locationItemView = LayoutInflater.from(getContext())
+                    .inflate(R.layout.list_item, parent, false);
         }
-    }
 
-    public LocationAdapter(Context context, List<Location> locations) {
-        this.locations = locations;
-        this.context = context;
-    }
+        Location location = getItem(position);
 
-    @Override
-    public LocationViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
-        return new LocationViewHolder(view);
-    }
+        // Set location name
+        TextView nameTextView = (TextView) locationItemView.findViewById(R.id.location_name);
+        nameTextView.setText(location.getLocationName());
 
+        // Set location price
+        TextView addressTextView = (TextView) locationItemView.findViewById(R.id.location_text);
+        addressTextView.setText(location.getLocationAddress());
 
-    @Override
-    public void onBindViewHolder(LocationViewHolder holder, final int position) {
+        // Set Location hours or hide
+        String hours = location.getLocationHours();
+        TextView hoursTextView = (TextView) locationItemView.findViewById(R.id.hours_text);
 
-        holder.mDescription.setText(locations.get(position).getDescription());
-        holder.mPhoneNumber.setText(String.valueOf(locations.get(position).getPhoneNumber()));
-        holder.mHours.setText(String.valueOf(locations.get(position).getLocationHours()));
-        holder.mName.setText(locations.get(position).getLocationName());
-        holder.mAddress.setText(locations.get(position).getLocationAddress());
-        holder.mImageId.setImageResource(locations.get(position).getImageResourceId());
+        if (Objects.equals(hours, "n/a") || hours == null) {
+            LinearLayout icon = (LinearLayout) locationItemView.findViewById(R.id.hours_layout);
+            icon.setVisibility(View.GONE);
+            hoursTextView.setVisibility(View.GONE);
+        } else {
+            hoursTextView.setText(hours);
+        }
 
-    }
-    @Override
-    public int getItemCount() {
-        return locations.size();
+        // Set the phone number or hide
+        TextView phoneTextView = (TextView) locationItemView.findViewById(R.id.phone_text);
+        String phone = location.getPhoneNumber();
+
+        if (Objects.equals(phone, "n/a") || phone == null) {
+            LinearLayout phoneLayout = (LinearLayout) locationItemView.findViewById(R.id.phone_layout);
+            phoneLayout.setVisibility(View.GONE);
+            phoneTextView.setVisibility(View.GONE);
+        } else {
+            phoneTextView.setText(phone);
+        }
+
+        // Handle photo if applicable
+        ImageView photo = (ImageView) locationItemView.findViewById(R.id.photo);
+
+        if (location.hasImage()) {
+            photo.setImageResource(location.getImageResourceId());
+        } else {
+            photo.setVisibility(View.GONE);
+        }
+
+        // Set the description
+        TextView descriptionTextView = (TextView) locationItemView.findViewById(R.id.description_text);
+        descriptionTextView.setText(location.getDescription());
+
+        return locationItemView;
     }
 }
