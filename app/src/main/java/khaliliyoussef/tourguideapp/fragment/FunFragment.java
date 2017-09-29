@@ -59,10 +59,6 @@ public class FunFragment extends Fragment {
                 getString(R.string.veloce_description),
                 R.mipmap.veloce_speedway));
 
-
-
-
-
         // Find display view for list
         ListView listView = (ListView) rootView.findViewById(R.id.locations_list);
 
