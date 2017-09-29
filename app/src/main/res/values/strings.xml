@@ -1,14 +1,8 @@
 <resources>
     <string name="app_name">Tour guide app</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
     <string name="not_applicable">n/a</string>
-<!--the SectionPagerAdapter Strings-->
-    <string name="parks">Parks</string>
-    <string name="food">Food</string>
-    <string name="fun">Fun</string>
-    <string name="fitness">Fitness</string>
+    <!--the SectionPagerAdapter Strings-->
 
     <!-- Park resources -->
 

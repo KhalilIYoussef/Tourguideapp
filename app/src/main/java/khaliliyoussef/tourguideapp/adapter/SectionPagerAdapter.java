@@ -41,13 +41,13 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return getSystem().getString(R.string.parks);
+                return "Parks";
             case 1:
-                return getSystem().getString(R.string.food);
+                return "Food";
             case 2:
-                return getSystem().getString(R.string.fun);
+                return "Fun";
             default:
-                return getSystem().getString(R.string.fitness);
+                return "Fitness";
         }
     }
 }
