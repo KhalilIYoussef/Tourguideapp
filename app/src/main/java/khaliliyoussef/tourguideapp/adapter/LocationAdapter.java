@@ -40,19 +40,19 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         Location location = getItem(position);
 
         // Set location name
-        TextView nameTextView = (TextView) locationItemView.findViewById(R.id.location_name);
+        TextView nameTextView =  locationItemView.findViewById(R.id.location_name);
         nameTextView.setText(location.getLocationName());
 
         // Set location price
-        TextView addressTextView = (TextView) locationItemView.findViewById(R.id.location_text);
+        TextView addressTextView =  locationItemView.findViewById(R.id.location_text);
         addressTextView.setText(location.getLocationAddress());
 
         // Set Location hours or hide
         String hours = location.getLocationHours();
-        TextView hoursTextView = (TextView) locationItemView.findViewById(R.id.hours_text);
+        TextView hoursTextView =  locationItemView.findViewById(R.id.hours_text);
 
         if (Objects.equals(hours, "n/a") || hours == null) {
-            LinearLayout icon = (LinearLayout) locationItemView.findViewById(R.id.hours_layout);
+            LinearLayout icon =  locationItemView.findViewById(R.id.hours_layout);
             icon.setVisibility(View.GONE);
             hoursTextView.setVisibility(View.GONE);
         } else {
@@ -64,7 +64,7 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         String phone = location.getPhoneNumber();
 
         if (Objects.equals(phone, "n/a") || phone == null) {
-            LinearLayout phoneLayout = (LinearLayout) locationItemView.findViewById(R.id.phone_layout);
+            LinearLayout phoneLayout =  locationItemView.findViewById(R.id.phone_layout);
             phoneLayout.setVisibility(View.GONE);
             phoneTextView.setVisibility(View.GONE);
         } else {
@@ -72,7 +72,7 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         }
 
         // Handle photo if applicable
-        ImageView photo = (ImageView) locationItemView.findViewById(R.id.photo);
+        ImageView photo =  locationItemView.findViewById(R.id.photo);
 
         if (location.hasImage()) {
             photo.setImageResource(location.getImageResourceId());
@@ -81,7 +81,7 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         }
 
         // Set the description
-        TextView descriptionTextView = (TextView) locationItemView.findViewById(R.id.description_text);
+        TextView descriptionTextView =  locationItemView.findViewById(R.id.description_text);
         descriptionTextView.setText(location.getDescription());
 
         return locationItemView;

@@ -4,10 +4,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import khaliliyoussef.tourguideapp.R;
 import khaliliyoussef.tourguideapp.fragment.FitnessFragment;
 import khaliliyoussef.tourguideapp.fragment.FoodFragment;
 import khaliliyoussef.tourguideapp.fragment.FunFragment;
 import khaliliyoussef.tourguideapp.fragment.ParkFragment;
+
+import static android.content.res.Resources.getSystem;
 
 public class SectionPagerAdapter extends FragmentPagerAdapter {
 
@@ -38,13 +41,13 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Parks";
+                return getSystem().getString(R.string.parks);
             case 1:
-                return "Food";
+                return getSystem().getString(R.string.food);
             case 2:
-                return "Fun";
+                return getSystem().getString(R.string.fun);
             default:
-                return "Fitness";
+                return getSystem().getString(R.string.fitness);
         }
     }
 }

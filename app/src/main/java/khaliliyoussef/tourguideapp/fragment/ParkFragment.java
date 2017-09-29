@@ -30,7 +30,7 @@ public class ParkFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         // Add all of the Park locations
-        final ArrayList<Location> locations = new ArrayList<Location>();
+        final ArrayList<Location> locations = new ArrayList<>();
 
 
         locations.add(new Location(getString(R.string.retzer_name),
